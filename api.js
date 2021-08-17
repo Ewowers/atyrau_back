@@ -11,13 +11,15 @@ const transport = require("./route/transport.api");
 const fire_stations = require("./route/fire_stations.api");
 const healthcare_facilities = require("./route/healthcare_facilities.api");
 const bank = require("./route/bank.api");
+const busTransport = require("./route/busTransport.api");
 const router = Router();
 router.use("/bank", bank);
 router.use("/event", event); // api событий города
 router.use("/crime", crime); // api криминала
 router.use("/users", users); // api пользователя
-router.use("/culture", culture);
-router.use("/fire_stations", fire_stations);
+router.use("/busTransport", busTransport);
+router.use("/culture", culture); // api культура кинотеатры и тд
+router.use("/fire_stations", fire_stations); //api пожарных странций
 router.use("/service", service); //api Услуги
 router.use("/transport", transport); // api страспорт
 router.use("/healthcare_facilities", healthcare_facilities);

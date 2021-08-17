@@ -6,4 +6,4 @@ const schema = new Schema({
   work_time: String,
   description: String,
 });
-module.exports = model("educational_institutions", schema);
+module.exports = model("events", schema);

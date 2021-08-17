@@ -2,7 +2,7 @@ const Event = require("../model/events");
 class Control {
   async get(req, res) {
     //получение всего бд
-    const event = await Event.find({});
+    const event = await Event.find();
     return res.status(200).json(event);
   }
   async getOne(req, res) {

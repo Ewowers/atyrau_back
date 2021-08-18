@@ -5,5 +5,6 @@ const schema = new Schema({
   contact: String,
   work_time: String,
   description: String,
+  type: String,
 });
 module.exports = model("healthcare_facilities", schema);

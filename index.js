@@ -15,7 +15,7 @@ app.use("/api", api);
 const start = async () => {
   try {
     //const url = "mongodb://localhost:27017/Atyrau"; // ссылка к базе
-    const urlProduction = "mongodb+srv://Ewojer:*****@cluster0.yc9cn.mongodb.net/Aturay";
+    const urlProduction = "mongodb+srv://Ewojer:Ewojer123@cluster0.yc9cn.mongodb.net/Atyrau";
     await mongoose.connect(urlProduction, {
       // подключение к монго
       useNewUrlParser: true,
@@ -23,6 +23,7 @@ const start = async () => {
       useFindAndModify: false,
       useCreateIndex: true,
     });
+    console.log(mongoose.schema);
     const port = process.env.PORT || 8001;
     app.listen(port, () => {
       console.log("run " + port);

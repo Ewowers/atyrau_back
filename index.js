@@ -15,7 +15,7 @@ app.use("/api", api);
 const start = async () => {
   try {
     //const url = "mongodb://localhost:27017/Atyrau"; // ссылка к базе
-    const urlProduction = "mongodb://localhost:27017/Atyrau";
+    const urlProduction = "mongodb+srv://Ewojer:*****@cluster0.yc9cn.mongodb.net/Aturay";
     await mongoose.connect(urlProduction, {
       // подключение к монго
       useNewUrlParser: true,
